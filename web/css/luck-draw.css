@@ -1,0 +1,313 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.luck-draw{
+	background: url(/images/luck-bg.png) no-repeat;
+	background-size: 100% auto;
+}
+.luck-list{
+	background: url(/images/luck-bg.jpg) no-repeat;
+	background-size: 100% auto;
+}
+img{
+	max-width: 100%;
+	width: 100%;
+}
+.zp-box{
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	width: 100%;
+	min-height: 100%;
+	font-family: " 微软雅黑,Microsoft YaHei,Arial,Helvetica,sans-serif";
+	overflow-y: scroll;
+}
+.dp-box{
+	width: 315px;
+	height: 315px;
+	margin: 0 auto;
+	position: relative;
+}
+.dipan{
+	position: absolute;
+	bottom: 1%;
+}
+.zhizhen{
+	width: 36%;
+	position: absolute;
+	top: 20%;
+	left: 32.5%;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	background:rgba(0,0,0, 0.7);
+	display: none;
+}
+.zj,
+.no-num,
+.no-luck,
+.win-cont{
+	width: 80%;
+	height: 200px;
+	position: fixed;
+	z-index: 600;
+	top: 22%;
+	left: 10%;
+	display: none;
+	background: #fdf4c2 url("/images/zj-tk.png") no-repeat;
+	background-size: 100% auto;
+}
+.close{
+	width: 12%;
+	position: absolute;
+	z-index: 601;
+	top: -9%;
+	right: -5%;
+}
+.wcs-img,
+.zj-img{
+	position: relative;
+	width: 100%
+}
+.texts, .text{
+	margin: 0;
+	position: absolute;
+	width: 80%;
+	top: 28%;
+	left: 11%;
+	text-align: center;
+	color: #fd3203;
+	line-height: 1.6;
+	font-weight: bold;
+	font-size: 20px;
+}
+/*中奖纪录*/
+.winning-record{
+	position: relative;
+	width: 80%;
+	margin-left: 10%;
+	height: 30px;
+	line-height: 30px;
+	background: #fdf1b8;
+	border-radius: 8px;
+	font-size: 14px;
+	color: #ff3d01;
+	overflow: hidden;
+}
+.winning-record .title{
+	float: left;
+	color: #ffffff;
+	background: #ff9b00;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	width: 80px;
+	text-align: center;
+}
+.winning-record .win-list{
+	position: absolute;
+	left: 80px;
+	top: 0;
+	width: 80%;
+	padding: 0;
+	margin: 0;
+}
+.winning-record li{
+	list-style: none;
+	height: 30px;
+	overflow: hidden;
+	padding-right: 10px;
+}
+.winning-record li .phone{
+	margin-left: 8%;
+}
+.winning-record li .win{
+	margin-left: 15%;
+}
+.world-luck{
+	margin-top: 22px;
+}
+.rule{
+	margin-top: 20px;
+}
+.share, .sure_btn{
+	position: absolute;
+	bottom: 8%;
+	text-decoration: none;
+	font-size: 18px;
+	background: #ff9b00;
+	color: #fff;
+	padding: 5px 10%;
+	border-radius: 6px;
+}
+.share{
+	right: 15%;
+}
+.sure_btn{
+	left: 15%;
+}
+
+
+/*中奖纪录*/
+ul{
+	margin: 0;
+	padding: 0;
+}
+.rule-title {
+	width: 68%;
+	top: 9%;
+	position: absolute;
+	z-index: 1;
+	left: 16%;
+}
+.award-title{
+	margin-top: 42%;
+	text-align: center;
+}
+.award-title p{
+	background: #ffbe04;
+	display: inline-block;
+	padding: 2px 15px;
+	border-radius: 5px;
+	box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+	color: #c72f42;
+	font-size: 16px;
+	font-weight: bold;
+}
+.award-list{
+	width: 74%;
+	background: #fabbad;
+	height: 298px;
+	margin-left: 13%;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 14px;
+	color: #d7000f;
+}
+.award-list ul{
+	padding: 15px;
+	height: 268px;
+	overflow: hidden;
+}
+.award-list li {
+	list-style: none;
+	line-height: 24px;
+	float: left;
+	width: 100%;
+}
+.award-list .house,
+.award-list .mobile,
+.award-list .award{
+	float: left;
+}
+.award-list .house{
+	width: 115px;
+	overflow: hidden;
+}
+.award-list .mobile,
+.award-list .award{
+	margin-left: 5%;
+}
+@media screen  and (max-width: 400px) {
+	.award-list{
+		font-size: 13px;
+	}
+	.award-list ul{
+		padding: 10px 15px;
+	}
+	.award-list .house{
+		width: 112px;
+	}
+	.award-list .mobile,
+	.award-list .award{
+		margin-left: 4%;
+	}
+}
+@media screen  and (max-width: 375px) {/* 设置中奖纪录iphone5的高度 */
+	.share, .sure_btn{
+		bottom: 13%;
+	}
+	.texts, .text{
+		font-size: 18px;
+	}
+	.dp-box{
+		width: 286px;
+		height: 286px;
+	}
+	.award-list{
+		font-size: 13px;
+	}
+	.award-list ul{
+		padding: 10px;
+	}
+	.award-list .house{
+		width: 108px;
+	}
+}
+@media screen  and (max-width: 360px) {/* 设置中奖纪录iphone5的高度 */
+	.dp-box{
+		width: 270px;
+		height: 270px;
+	}
+	.award-list ul{
+		padding: 8px;
+	}
+	.award-list .house{
+		width: 105px;
+	}
+	.award-list .mobile,
+	.award-list .award{
+		margin-left: 3%;
+	}
+}
+@media screen  and (max-width: 340px) {/* 设置中奖纪录iphone5的高度 */
+	.dp-box{
+		width: 256px;
+		height: 256px;
+	}
+	.award-list ul{
+		padding: 10px;
+	}
+	.award-list{
+		font-size: 12px;
+	}
+	.award-list .house{
+		width: 96px;
+	}
+}
+@media screen  and (max-width: 320px) {/* 设置中奖纪录iphone5的高度 */
+	.share, .sure_btn{
+		font-size: 16px;
+		padding: 5px 9%;
+		bottom: 8%;
+	}
+	.winning-record li .phone{
+		margin-left: 5%;
+	}
+	.winning-record li .win{
+		margin-left: 10%;
+	}
+	.zj, .no-num,.no-luck, .win-cont{
+		height: 160px;
+	}
+	.texts, .text{
+		font-size: 16px;
+	}
+	.dp-box{
+		width: 240px;
+		height: 240px;
+	}
+	.award-list ul{
+		padding: 8px;
+	}
+	.award-list .house{
+		width: 96px;
+	}
+}

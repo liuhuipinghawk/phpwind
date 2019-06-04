@@ -1,0 +1,1 @@
+window.myStorage=new function(){var t;t=window.localStorage?localStorage:cookieStorage,this.setItem=function(e,o){t.setItem(e,o)},this.getItem=function(e){return t.getItem(e)},this.removeItem=function(e){t.removeItem(e)},this.clear=function(){t.clear()}};

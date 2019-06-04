@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+}
+.message-list {
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.6) url(/img/bulletin.gif) no-repeat scroll 0 5px;
+    color: #ffffff;
+    width: 100%;
+    height: 32px;
+    min-height: 32px;
+    overflow: hidden;
+}
+.message-list ul {
+    list-style:none;
+    width:100%;
+    height:100%;
+}
+.message-list ul li {
+    width:100%;
+    height:40px;
+    box-sizing:border-box;
+    line-height:32px;
+    padding-left: 30px;
+}
+.message-list ul li:hover{
+    cursor: pointer;
+}

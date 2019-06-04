@@ -1,0 +1,126 @@
+img{
+	vertical-align: bottom;
+}
+#banner .title{
+	width: 100%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	line-height: 0.5rem;
+	font-family: PingFang-SC Medium;
+	font-size: 0.3rem;
+	text-indent: 1em;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.enterbar{
+	width: 100%;
+	padding: 0.4rem 0;
+	background: #fff;
+	overflow: hidden;
+}
+.enterbar li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	font-family: PingFangSC-Regular;
+	font-size: 0.24rem;
+}
+.enterbar li a{
+	color: #333;
+}
+.enterbar li img{
+	height: 0.68rem;
+}
+.enterbar li p{
+	margin-top: 0.1rem;
+}
+.weui-panel__hd{
+	font-family: PingFangSC-Medium;
+	font-size: 0.34rem;
+	color: #333;
+	
+}
+.weui-media-box_appmsg .weui-media-box__bd{
+	height: 80px;
+	position: relative;
+	margin-right: 15px;
+}
+.weui-media-box_appmsg .weui-media-box__bd .weui-media-box__desc{
+	font-family: PingFangSC-Medium;
+	font-size: 0.3rem;
+	color: #333;
+}
+.weui-media-box_appmsg .weui-media-box__bd>div{
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #999999;
+	font-family: PingFangSC-Regular;
+	font-size: 0.24rem;
+}
+.weui-media-box_appmsg .weui-media-box__bd>div .pull-right{
+	margin-right: 15px;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+	margin-right: 0;
+	width: 85px;
+	height: 80px;
+}
+.weui-loadmore{
+	display: none;
+}
+/*dec*/
+.dec{
+	padding: 0 15px;
+	font-family: PingFangSC-Medium;
+	font-size: 0.3rem;
+}
+/*member*/
+.member .weui-media-box_appmsg .weui-media-box__hd{
+	margin-right: 0.2rem;
+	width: 1.1rem;
+	height: 1.1rem;
+	border-radius: 10px;
+	overflow: hidden;
+	/*background: #d71517;*/
+}
+.member .weui-media-box_appmsg .weui-media-box__bd{
+	height: 1.1rem;
+}
+.member .weui-media-box__title{
+	font-family: PingFangSC-Regular;
+	font-size: 0.3rem;
+	color: #333;
+}
+.member .weui-media-box_appmsg .weui-media-box__bd .weui-media-box__desc{
+	font-family: PingFangSC-Regular;
+	font-size: 0.28rem;
+	color: #999;
+	margin-top: 10px;
+}
+/*join*/
+.join #logo{
+	margin: 0;
+	border-radius: 50%;
+	width: 1.4rem;
+	height: 1.4rem;
+	background: #d8d8d8;
+	background-size:cover;
+	border-color: transparent;
+	position: relative;
+}
+.join .weui-cell+.weui-cell{
+	height: 1rem;
+}
+.join .weui-btn_primary:link{
+	background-color: transparent;
+	background: url(../img/btn.png) 50% center/cover;
+	border-radius: 44px;
+}
+.join .weui-btn:after{
+	border: none;
+}
